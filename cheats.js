@@ -23,12 +23,12 @@
       var b = document.getElementById("goldenCookie");
 
       Cheater.goldenCookieDelayId = setInterval(function() {
-        Game.goldenCookie["delay"] = 50;
-      }, 100);
+        window.Game.goldenCookie["delay"] = 10;
+      }, 15000);
 
       Cheater.goldenCookieClickerId = setInterval(function() {
         b.click();
-      }, 10);      
+      }, 2000);      
     },
 
     stopGoldenCookieAutoClicker: function() {
